@@ -1,0 +1,21 @@
+a { 
+  color: white;
+}
+
+.nav-item {
+  padding: 0 5px;
+}
+
+.navbar {
+  &__container {
+    background: gray;
+  }
+
+  &__nav {
+    flex-direction: row;
+  }
+
+  &__link {
+    padding: 0 5px;
+  }
+}

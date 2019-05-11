@@ -1,25 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/home">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid navbar__container">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/home">Test application</a>
+    </div>
+    <ul class="nav navbar-nav navbar__nav">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/home">
+          Home <span class="sr-only">(current)</span>
+        </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/form">Form</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " routerLink="/register">Register</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" routerLink="#">Link</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link " routerLink="#">Disabled</a>
+    </ul>
+    <ul class="nav navbar-nav navbar-right navbar__nav">
+      <li>
+        <a class="nav-link navbar__link" routerLink="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+      </li>
+      <li>
+        <a class="nav-link navbar__link"  routerLink="/register" href="#"><span class="fa fa-user"></span> Login</a>
       </li>
     </ul>
   </div>
